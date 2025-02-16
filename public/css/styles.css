@@ -1,10 +1,16 @@
-
 /* Reset some default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
 /* Body for Services Page */
 body.services-page {
   font-family: Arial, sans-serif;
@@ -130,7 +136,7 @@ body.welcome-page {
   border-radius: 7px;
 
   /* Fondo con imagen ajustada al texto */
-  background-image: url('/img/Logo.png');
+  /*background-image: url('/img/Logo.png');*/
   background-size: cover; /* La imagen cubre toda el área */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -343,7 +349,7 @@ padding: 40px 20px;
 /* Body for Admin Page */
 body.admin-page {
   font-family: Arial, sans-serif;
-  background-image: url('/img/homeAdmin.png'); /* Ruta de la imagen de fondo específica para el panel de admin */
+  background-image: url('/img/homeAdmin.jpg'); /* Ruta de la imagen de fondo específica para el panel de admin */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -725,6 +731,19 @@ footer {
 
 footer p {
   font-size: 16px;
+}
+
+/* Custom Navbar */
+.navbar-custom {
+  background-color: #343a40;
+}
+
+/* Custom Footer */
+.footer-custom {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
 

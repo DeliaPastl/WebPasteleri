@@ -2,7 +2,6 @@ const Galeria = require('../models/Galeria');
 const fs = require('fs');
 const path = require('path');
 
-
 // Obtener todos los servicios
 exports.getGaleria = async (req, res) => {
   try {
