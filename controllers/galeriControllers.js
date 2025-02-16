@@ -10,15 +10,15 @@ exports.getGaleria = async (req, res) => {
     res.render('pages/galeri', { galeria });
   } catch (error) {
     console.error(error);
-    res.status(500).send('Error al obtener los servicios');
+    res.status(500).send('Error al obtener los servicios'); 
   }
 };
 
 // Añadir un nuevo servicio
 exports.addGaleria = async (req, res) => {
   try {
-    const { title, description } = req.body;
-    const image = req.file ? `/uploads/${req.file.filename}` : null;
+    const { title, description, imageUrl } = req.body;
+    const image = req.file ? `/uploads/${req.file.filename}` : imageUrl;
 
     if (!image) {
       req.flash('error', 'No se ha subido ninguna imagen.');

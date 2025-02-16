@@ -10,6 +10,6 @@ router.get('/services', serviceController.getServices);
 router.get('/contact', contactController.getContact);
 router.get('/galeria', galeriaController.getGaleria);
 
-module.exports = router;
+module.exports = router; 
 
 

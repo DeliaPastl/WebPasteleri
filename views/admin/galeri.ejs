@@ -14,7 +14,7 @@
     <nav>
       <a href="/admin">
         <i class="fas fa-tachometer-alt"></i> Inicio
-      </a>
+      </a> 
       <a href="/admin/services">
         <i class="fas fa-cake"></i> Productos
       </a>
@@ -47,7 +47,9 @@
 
           <div class="form-group">
             <label for="image">Imagen:</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
+            <input type="file" id="image" name="image" accept="image/*">
+            <label for="imageUrl">o URL de la Imagen:</label>
+            <input type="url" id="imageUrl" name="imageUrl">
           </div>
 
           <button type="submit" class="submit-btn">Añadir a la Galería</button>

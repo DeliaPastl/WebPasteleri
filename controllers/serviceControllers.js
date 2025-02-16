@@ -9,7 +9,7 @@ exports.getServices = async (req, res) => {
     res.render('pages/services', { services });
   } catch (error) {
     console.error(error);
-    res.status(500).send('Error al obtener los servicios');
+    res.status(500).send('Error al obtener los servicios'); 
   }
 };
 
@@ -17,8 +17,8 @@ exports.getServices = async (req, res) => {
 // Controlador para agregar un servicio
 exports.addService = async (req, res) => {
   try {
-    const { title, description, price } = req.body;
-    const image = req.file ? `/uploads/${req.file.filename}` : null; // Ruta de la imagen
+    const { title, description, price, imageUrl } = req.body;
+    const image = req.file ? `/uploads/${req.file.filename}` : imageUrl; // Ruta de la imagen o URL
 
     const newService = new Service({
       title,

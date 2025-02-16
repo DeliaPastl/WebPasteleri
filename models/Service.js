@@ -7,4 +7,4 @@ const serviceSchema = new mongoose.Schema({
   image: { type: String}, // URL de la imagen
 });
 
-module.exports = mongoose.model('Service', serviceSchema);
+module.exports = mongoose.model('Service', serviceSchema); 

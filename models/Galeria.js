@@ -6,4 +6,4 @@ const galeriaSchema = new mongoose.Schema({
   image: { type: String, required: true },
 });
 
-module.exports = mongoose.model('Galeria', galeriaSchema);
+module.exports = mongoose.model('Galeria', galeriaSchema); 
